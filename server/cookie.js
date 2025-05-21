@@ -4,7 +4,7 @@ export function loginCookie(req, res) {
     const { username, password } = req.body
 
     // check username and password
-    if (!password === '123456') {
+    if (password !== '123456') {
         res.sendStatus(401)
         return
     }
